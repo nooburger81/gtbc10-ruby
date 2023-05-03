@@ -30,3 +30,25 @@ const questions = [
         },
     ];
 
+//Creating the shape and writing it to a file
+inquirer.prompt(questions).then(({ text, textColor, shapeType, shapeColor }) => {
+    let shape;
+
+    switch (shapeType) {
+        case 'Triangle':
+            shape = new Triangle();
+            break;
+        case 'Circle':
+            shape = new Circle();
+            break;
+        default: 'Square';
+            shape = new Square();
+            break;
+    }
+shape.setColor(shapeColor)
+    const svg = new logoGen()
+    svg.setText(text, textColor)
+    svg.setShape(shape)
+    return writeFile("./examples/logo.svg", svg.render())
+})
+    .then(() => console.log("Generated logo.svg"))
