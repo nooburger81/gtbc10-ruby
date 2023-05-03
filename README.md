@@ -20,6 +20,8 @@
   ## Usage
   As a way to make rad logos for my diversifying business. 
 
+  Link to view walkthrough: <https://watch.screencastify.com/v/mg9XzinFalfVYUSv3BNk>
+
   ## License
     This project is licensed under the MIT license.
 
