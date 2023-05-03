@@ -41,7 +41,7 @@ inquirer.prompt(questions).then(({ text, textColor, shapeType, shapeColor }) => 
         case 'Circle':
             shape = new Circle();
             break;
-        default: 'Square';
+        default: 
             shape = new Square();
             break;
     }
